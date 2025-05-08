@@ -46,6 +46,8 @@ main {
     --bg_header: #ff6900;
     --product_in_sale: red;
     --product_eco_friendly: green;
+    --bg_footer_top: #1a1a1a;
+    --bg_footer_bottom: #0e0e0e;
 }
 /* !Header */
 header {
@@ -98,6 +100,8 @@ header {
         }
         .card {
             position: relative;
+            .card_image {
+            }
             .card_sale {
                 background-color: red;
                 padding: 3px 10px;
@@ -132,5 +136,43 @@ header {
             color: var(--product_in_sale);
             font-weight: 600;
         }
+    }
+}
+/* !Hover Immagini */
+/*Non so per quale motivo non me lo facci nestare*/
+.hover_img {
+    display: none;
+}
+.card:hover {
+    .hover_img {
+        display: block;
+    }
+    .image {
+        display: none;
+    }
+}
+/* !Footer */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg_footer_top);
+    color: white;
+    padding: 20px;
+    .footer_menu {
+        .logo_sm {
+            font-size: 0.9rem;
+        }
+        .footer_menu_link {
+            display: flex;
+            list-style-type: none;
+            font-size: 0.7rem;
+        }
+    }
+    .footer_social_link_title {
+        font-size: 0.7rem;
+        padding: 8px;
+    }
+    .footer_social_link_icon {
     }
 }
