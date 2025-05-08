@@ -1,0 +1,84 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Utils */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.p_5 {
+    padding: 0px 5px;
+}
+.d_flex {
+    display: flex;
+}
+/* Generics */
+body {
+    font-family: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+img {
+    max-width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #0e0e0e;
+}
+
+/* Debug */
+.debug {
+    * {
+        border: 1px dashed black;
+    }
+}
+
+/* Common */
+:root {
+    --bg_header: #ff6900;
+    --product_in_sale: red;
+    --product_eco_friendly: green;
+    --bg_footer_top: #1a1a1a;
+    --bg_footer_bottom: #0e0e0e;
+}
+
+/* !Header */
+header {
+    background-color: var(--bg_header);
+    box-shadow: 0px 3px 5px grey;
+    #nav_bar {
+        justify-content: space-between;
+        padding: 15px;
+        height: 70px;
+
+        /* Link Menu */
+        .header_menu_link {
+            width: 25%;
+            align-items: center;
+
+            .menu_link {
+                list-style-type: none;
+                color: white;
+                justify-content: space-between;
+            }
+        }
+        .nav_bar_logo {
+            width: 50%;
+            align-content: center;
+            justify-content: center;
+
+            /* Logo */
+            #logo {
+                height: 100%;
+            }
+        }
+    }
+    .header_menu_icon {
+        width: 25%;
+        text-align: right;
+        align-content: center;
+        color: white;
+    }
+}
