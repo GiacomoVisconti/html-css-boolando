@@ -7,12 +7,11 @@
 
 /* Utils */
 .container {
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
-    width: 80%;
 }
-.p_5{
-     padding: 0px 5px;
+.p_5 {
+    padding: 0px 5px;
 }
 .d_flex {
     display: flex;
@@ -23,6 +22,15 @@ body {
 }
 img {
     max-width: 100%;
+}
+main {
+    margin-top: 20px;
+}
+.product_tag {
+    color: white;
+    padding: 3px 10px;
+    font-size: 0.8rem;
+    font-weight: 600;
 }
 
 /* Debug */
@@ -41,6 +49,7 @@ img {
 /* !Header */
 header {
     background-color: var(--bg_header);
+    box-shadow: 0px 3px 5px grey;
     #nav_bar {
         justify-content: space-between;
         padding: 15px;
@@ -49,18 +58,15 @@ header {
         /* Link Menu */
         .header_menu_link {
             width: 25%;
-           align-items: center;
-           
+            align-items: center;
 
             .menu_link {
                 list-style-type: none;
                 color: white;
                 justify-content: space-between;
-                
             }
         }
         .nav_bar_logo {
-            
             width: 50%;
             align-content: center;
             justify-content: center;
@@ -71,10 +77,46 @@ header {
             }
         }
     }
-    .header_menu_icon{
-        
+    .header_menu_icon {
         width: 25%;
         text-align: right;
         align-content: center;
         color: white;
+    }
+}
+
+/* !Main */
+.row {
+    flex-wrap: wrap;
+
+    .col_3 {
+        width: calc(100% / 12 * 4);
+        padding: 1rem;
+        .card {
+            box-shadow: 0px 3px 5px grey;
+        }
+        .card {
+            position: relative;
+            .card_sale {
+                background-color: red;
+                position: relative;
+                bottom: 50px;
+            }
+            .card_eco {
+                background-color: green;
+                position: relative;
+                bottom: 50px;
+            }
+        }
+    }
+    .card_brand {
+        font-size: 0.9rem;
+    }
+    .card_product_model {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    .card_price {
+        font-size: 1rem;
+    }
 }
