@@ -1,0 +1,30 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Utils */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+}
+/* Generics */
+header {
+    background-color: var(--bg_header);
+}
+
+/* Debug */
+.debug {
+    * {
+        border: 1px dashed black;
+    }
+}
+
+/* Common */
+:root {
+    --bg_header: orange;
+    --product_in_sale: red;
+    --product_eco_friendly: green;
+}
