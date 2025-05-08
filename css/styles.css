@@ -95,9 +95,7 @@ header {
     .col_3 {
         width: calc(100% / 12 * 4);
         padding: 1rem;
-        .card {
-            box-shadow: 0px 3px 5px grey;
-        }
+
         .card {
             position: relative;
             .card_image {
@@ -122,24 +120,27 @@ header {
             }
         }
     }
-    .card_brand {
-        font-size: 0.9rem;
-    }
-    .card_product_type {
-        font-size: 1.1rem;
-        font-weight: 600;
-    }
-    .card_price {
-        font-size: 0.8rem;
-        padding: 3px;
-        .card_current_price {
-            color: var(--product_in_sale);
+    .card_product_caption {
+        color: #0e0e0e;
+        .card_brand {
+            font-size: 0.9rem;
+        }
+        .card_product_type {
+            font-size: 1.1rem;
             font-weight: 600;
+        }
+        .card_price {
+            font-size: 0.8rem;
+            padding-right: 3px;
+            .card_current_price {
+                color: var(--product_in_sale);
+                font-weight: 600;
+            }
         }
     }
 }
 /* !Hover Immagini */
-/*Non so per quale motivo non me lo facci nestare*/
+/*Non so per quale motivo non me lo faccia nestare*/
 .hover_img {
     display: none;
 }
