@@ -152,6 +152,9 @@ header {
         display: none;
     }
 }
+i:hover {
+    color: red;
+}
 /* !Footer */
 footer {
     display: flex;
